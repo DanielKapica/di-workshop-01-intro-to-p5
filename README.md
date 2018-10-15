@@ -211,10 +211,17 @@ function setup() {
 
 **What does setup do?**
 
+It runs when you first launch the website/code.
+
 **What do `{` `}` mean? What happens if you remove one?**
+
+Brackets used to say when the function starts/ends. Removal breaks the code.
 
 **What do the numbers in `background(0, 0, 0)` do? What happens when you change
 them? How is this different from Sketch A?**
+
+Sketch A uses variables to change the parameters, Sketch B directly manipulates
+the parameters with numbers.
 
 Now look at these lines:
 
@@ -227,6 +234,8 @@ function draw() {
 
 **What does draw do?**
 
+Executes what's inside the function multiple times.
+
 Now look at:
 
 ```js
@@ -235,10 +244,20 @@ fill(255, 0, 0)
 
 **What do these numbers do? What happens when you change them?**
 
+RGB, choosing the colour of the centre of the circle. Colour changes when we
+change the colours.
+
 **What does fill mean? What happens if you change it to stroke?**
 
+Fill means that it will be changing the internal colour of the circle. Changing
+it to stroke will change the colour of the outside of the circle.
+
 **What happens if you remove (or comment out) this line? What about if you
-include both fill and stroke on seperate lines?**
+include both fill and stroke on separate lines?**
+
+Commenting out fill will default to white circle with black background.
+Separating the lines means we can change the colour of the outside and inside
+of the circle.
 
 Now look at this line:
 
@@ -248,15 +267,26 @@ ellipse(mouseX, mouseY, 30, 30)
 
 **What does `ellipse` do?**
 
+Ellipse draws an oval shape on the screen.
+
 **What happens if you change the numbers?**
+
+The shape/dimensions of the ellipse changes.
 
 **What do `mouseX` and `mouseY` mean?**
 
+Coordinates of the mouse positions.
+
 **What happens if you change the order of the items between the `(` `)`?**
+
+Changes the width/height of the shape being drawn.
 
 ---
 
 **What happens if you add `background(0)` after `draw() {`? Why?**
+
+Every tick it makes the background black. Draw function is called 60 times a
+second.
 
 Replace the ellipse with a triangle. Use https://p5js.org/reference/ (the 2D
 primitives section) to help.
