@@ -125,9 +125,17 @@ var b = 0
 
 **What might these lines do?**
 
+Change the colour of the box.
+
 **What happens if you change the numbers?**
 
+The numbers determine the composition of the Red, Green and Blue of the box.
+
 **What numbers are allowed / What numbers have an effect?**
+
+All of the numbers are allowed, numbers above 255 are defaulted to 255.
+
+Negative numbers are defaulted to 0. Changing numbers will change the shades.
 
 Look at this line:
 
@@ -137,14 +145,25 @@ createCanvas(400, 400)
 
 **What does createCanvas do?**
 
+Function which creates the scene.
+
 **What happens if you change the numbers?**
+
+The size of the scene changes, negatives count as 0.
 
 **What numbers are allowed/what numbers have an effect?**
 
+All numbers have effect, except negatives.
+
 **What happens if you add/remove a number?**
+
+The scene does not appear.
 
 **Can you guess what the `function setup() {` part does? What happens if you
 change the name of setup?**
+
+The name of the function which sets up the scene. It is from the P5 library.
+Changing the name of the functions will break the scene.
 
 Look at this line:
 
@@ -154,12 +173,20 @@ background(r, g, b)
 
 **What does background do?**
 
+Sets the colour of the scene.
+
 **What happens if you change the order of the letters in background? What does
 this tell you about how the computer uses them?**
 
+R - Red, B - Blue, G - Green, A - Alpha (Opacity)
+
 **What happens if you change the number of letters?**
 
+First parameters are either R, R,A OR R,B,A OR R,B,G, R,B,G,A.
+
 **What happens if you change the letters for different ones?**
+
+Breaks. Nothing will happen.
 
 # Sketch B
 
