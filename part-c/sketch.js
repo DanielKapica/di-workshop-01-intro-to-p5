@@ -4,11 +4,12 @@ function setup() {
 }
 
 function draw() {
-  if (mouseIsPressed) {
-    fill(255, 0, 0)
+  if (keyIsPressed) {
+    fill(mouseX, 0, mouseY)
   } else {
-    fill(0, 255, 0)
+    fill(0, 30, 255)
+    stroke(0, 255, 0)
   }
 
-  ellipse(mouseX, mouseY, 30, 30)
+  rect(mouseX, mouseY, 30, 30)
 }
