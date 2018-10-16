@@ -1,6 +1,7 @@
 function setup() {
   shape = ellipse
   shapeSize = 30
+  canDraw = false
   createCanvas(400, 400)
   background(0, 0, 0)
 }
@@ -31,6 +32,17 @@ function draw() {
     if (key == '-') {
       shapeSize -= 3
     }
+    if (key == '<') {
+      canDraw = true
+    }
+    if (key == '>') {
+      canDraw = false
+    }
+    
   }
-  shape(mouseX, mouseY, shapeSize, shapeSize)
+  
+  if (canDraw == true){
+    shape(mouseX, mouseY, shapeSize, shapeSize)
+    }
+  
 }
