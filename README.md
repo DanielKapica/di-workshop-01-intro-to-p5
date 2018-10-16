@@ -1,6 +1,6 @@
 # Workshop 1: Introducing JavaScript with P5.js
 
-Collaborators: [your github username] & [your partners github username]
+Collaborators: [DanielKapica] & [Bhkem]
 
 Make sure you’re working in pairs - on a single laptop. You’ll be **pair
 programming**. In pair programming, there are two roles - **driver** and
@@ -313,18 +313,31 @@ if (mouseIsPressed) {
 
 **What does `mouseIsPressed` mean?**
 
+Variable which will be true if mouse is clicked and false if not.
+
 **What happens if you change `mouseIsPressed` to `keyIsPressed`?** You’ll need
 to click on the sketch so it registers keyboard events – use the ctrl key if you
-have issues with the keyboard.
+ have issues with the keyboard.
+
+Variable which will be true if key is pressed on keyboard and false if not.
 
 **What does if / else do?**
 
+If will execute if the condition is true, else will do if the condition is not
+met.
+
 **What happens if you remove the { } or ( )? Why?**
+
+The code breaks.
 
 **What happens if you change 255 to mouseX ? Why?**
 
+Colour of the object will correspond to the X Coordinate of the mouse.
+
 **Remove the outline of the circle. Use Google and the P5.js reference to help
 you.**
+
+
 
 # Challenge
 
